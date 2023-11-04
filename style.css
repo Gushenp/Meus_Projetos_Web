@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Configurações gerais */
 *{
     margin: 0px;
     padding: 0px;
@@ -13,6 +14,7 @@ body, html{
     background-color: rgb(82, 82, 82);
 }
 
+/* Configuração do banner e cabeçalho */
 .banner{
     width: 100%;
     height: 200px;
@@ -36,10 +38,10 @@ header{
     width: 120px;
 }
 
+/* Página principal */
 main{
     margin: 0% 0% 10% 0%;
 }
-
 
 .content{
     margin: 0% 5% 10% 5%;
@@ -50,6 +52,7 @@ h4{
     margin-bottom: 5%;
 }
 
+/* Configuração display dos artistas */
 .foto{
     height: 160px;
     width: 150px;
@@ -57,7 +60,7 @@ h4{
     background-color: #808080;
 }
 
-img{
+.imgartist{
     box-shadow: 6px 10px 9px 6px rgb(0 0 0 / 46%);
     transition: box-shadow .5s;
 }
@@ -94,13 +97,89 @@ img{
 .artistname{
     width: 150px;
     padding: 5px;
+    margin-left: 10px;
     text-align: center;
     background-color: #252525;
     box-shadow: 8px 12px 15px 0px rgb(0 0 0 / 46%);
-    transition: padding .5s, box-shadow .5s;
+    transition: padding .5s, box-shadow .5s, margin .5s;
 }
 
 .artistsection:hover .artistname{
     padding: 10px 0px 10px 0px;
+    margin-left: 15px;
     box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Configuração das músicas populares */
+
+.popularmusic {
+    height: 235px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.capa{
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: #808080;
+}
+
+.imgcapa{
+    height: 130px;
+}
+
+.musiccontente{
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    width: 65%;
+    background-color: #383737;
+}
+
+.musiccontente:hover{
+    background-color: rgb(27, 27, 27);
+    transition: background-color .2s ;
+}
+
+.contenttext{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contenttext > h5{
+    margin-top: 5%;
+    text-align: center;
+    transition: opacity .2s;
+}
+
+.contenttext > a{
+    margin-left: 6%;
+}
+
+.contenttext > p{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-size: 12px;
+    transition: opacity .2s;
+}
+
+.contenttext:hover > p,
+.contenttext:hover > h5 {
+    opacity: 0;
+}
+
+.contenttext > a > img{
+    width: 30px;
+    height: 30px;
 }
