@@ -1,185 +1,115 @@
 @charset "UTF-8";
 
-/* Configurações gerais */
 *{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 
-body, html{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(82, 82, 82);
+:root{
+    --cor0: rgb(255, 255, 255);
+    --cor1: #FFC0CB;
+    --cor2: #AEC6CF;
+    --cor3: #E6E6FA;
+    --cor4: #98FB98;
+    --cor5: #FFFF99; 
+    --cor6: #FF6347;
 }
 
-/* Configuração do banner e cabeçalho */
-.banner{
-    width: 100%;
-    height: 200px;
-    background-color: rgb(197, 197, 197);
-}
-
-header{
+/* conf cabeçalho */
+header {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 1em;
     display: flex;
-    position: relative;
-    top: -6%;
     align-items: center;
-    font-size: 2em;
+    justify-content: space-between;
+    background-color: var(--cor5);
 }
 
-.logopicture{
-    margin-left: 5%;
-    margin-right: 3%;
-    background-color: rgb(104, 104, 104);
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
+img{
+    width: 100%;
 }
 
-/* Página principal */
-main{
-    margin: 0% 0% 10% 0%;
-}
-
-.content{
-    margin: 0% 5% 10% 5%;
-    line-height: 1.5;
-}
-
-h4{
-    margin-bottom: 5%;
-}
-
-/* Configuração display dos artistas */
-.foto{
-    height: 160px;
-    width: 150px;
-    margin: 15px 15px 0px 15px;
-    background-color: #808080;
-}
-
-.imgartist{
-    box-shadow: 6px 10px 9px 6px rgb(0 0 0 / 46%);
-    transition: box-shadow .5s;
-}
-
-.artistsection:hover img{
-    box-shadow: none;
-}
-
-.artist{
+#menu{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    list-style: none;
+    gap: .5rem;
 }
 
-.artistsection {
-    cursor: pointer;
-    height: 235px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform .5s, transform .5s, box-shadow .5s, margin .5s;
-}
-
-.artistsection:hover {
-    margin: 0% 2% 0% 2%;
-    transform: scale(1.05);
-    box-shadow: 0px 0px 7px 7px rgba(255, 255, 255, 0.459);
-}
-
-.artist:hover .artistsection:not(:hover) {
-    transform: scale(0.9);
-}
-
-.artistname{
-    width: 150px;
-    padding: 5px;
-    margin-left: 10px;
-    text-align: center;
-    background-color: #252525;
-    box-shadow: 8px 12px 15px 0px rgb(0 0 0 / 46%);
-    transition: padding .5s, box-shadow .5s, margin .5s;
-}
-
-.artistsection:hover .artistname{
-    padding: 10px 0px 10px 0px;
-    margin-left: 15px;
-    box-shadow: none;
+#logo{
+    font-size: 20px;
 }
 
 a{
     text-decoration: none;
 }
 
-/* Configuração das músicas populares */
-
-.popularmusic {
-    height: 235px;
-    display: flex;
-    flex-direction: row;
-    align-items: left;
+#btn-mobile{
+    display: none;
 }
 
-.capa{
-    display: flex;
-    height: 180px;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    background-color: #808080;
-}
-
-.imgcapa{
-    height: 130px;
-}
-
-.musiccontente{
-    display: flex;
-    height: 180px;
-    justify-content: center;
-    width: 65%;
-    background-color: #383737;
-}
-
-.musiccontente:hover{
-    background-color: rgb(27, 27, 27);
-    transition: background-color .2s ;
-}
-
-.contenttext{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-
-.contenttext > h5{
-    margin-top: 5%;
-    text-align: center;
-    transition: opacity .2s;
-}
-
-.contenttext > a{
-    margin-left: 6%;
-}
-
-.contenttext > p{
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
+.introducao{
     text-align: justify;
-    font-size: 12px;
-    transition: opacity .2s;
 }
 
-.contenttext:hover > p,
-.contenttext:hover > h5 {
-    opacity: 0;
+h1{
+    margin-top: 3%;
+    text-align: center;
 }
 
-.contenttext > a > img{
-    width: 30px;
-    height: 30px;
+h2{
+    margin: 2% 0% 2% 0%;
+    text-align: center;
+}
+
+article{
+    margin: 5%;
+    padding: 3%;
+    background-color: var(--cor1);
+}
+
+
+.biografia{
+    background-color: var(--cor3);
+}
+
+#conteudo {
+    background-color: var(--cor4);
+    margin: 0%;
+    overflow: hidden;
+    max-height: 455px; /* Ajuste isso conforme necessário */
+    transition: max-height 0.5s ease;
+}
+
+
+/* adcionar efeito paralax */
+.popularmusicas{ 
+    background-color: var(--cor2);
+}
+
+.popularmusicas> ul > li > div > img{
+    width: 20%;
+}
+
+.popularmusicas > ul{
+    margin: 5%;
+    list-style: none;
+}
+
+.albuns > ul > li > div > img{
+    width: 20%;
+}
+
+.albuns > ul{
+    margin: 5%;
+    list-style: none;
+}
+
+.albuns{
+    background-color: var(--cor2);
+}
+
+footer{
+    background-color: var(--cor4);
 }

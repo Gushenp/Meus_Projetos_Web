@@ -4,67 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descrição do seu site aqui">
-
     <link rel="stylesheet" href="style.css">
 
-    <title>The - Fan Site</title>
+    <link rel="stylesheet" media="(max-width: 600px)" href="mobile.css">
+
+    <title>Melanie Martinez | Fã Page</title>
 </head>
 <body>
-    <div class="banner"></div>
     <header>
-        <div class="logopicture"></div>
-        <p class="name">The neibothood</p>
+        <a href="" id="logo">Melanie Martinez | Fã Page</a>
+        <nav id="nav">
+            <button id="btn-mobile">menu</button>
+            <ul id="menu">
+                <li><a href="">Topico</a></li>
+                <li><a href="">Tal</a></li>
+                <li><a href="">Bla</a></li>
+                <li><a href="">shabal</a></li>
+            </ul>
+        </nav>
+        <script src="menu.js"></script>
     </header>
-    <main>
-        <section class="content">
-            <h4>Sobre</h4>
-            <p>The Neighbourhood é uma banda formada em Nova Iorque em 2011. Seu som é uma mistura eclética de rock alternativo, pop e elementos do R&B, criando uma sonoridade que é ao mesmo tempo familiar e inovadora. A banda é conhecida por sua estética obscura e suas letras profundas, que muitas vezes exploram temas de alienação, relacionamentos complicados e a complexidade da vida urbana.<br><br>
-            Seu sucesso é impulsionado por músicas como "Sweater Weather," que se tornou um hino do gênero. Além disso, suas letras profundas e reflexivas têm a capacidade de tocar o coração dos ouvintes.
-            </p>
-        </section>
-        <section class="content">
-            <h4>Quem somos</h4>
-            <div class="artist">
-                <div class="artistsection">
-                    <a href="https://pt.wikipedia.org/wiki/Jesse_Rutherford" target="_blank">
-                            <div class="foto"><img src="imagens/artistas/jesse-rutherford.jpg" alt="Jesse Rutherford" class="imgartist"></div>
-                            <p class="artistname">Jesse Rutherford</p>
-                    </a>
-                </div>
-                <div class="artistsection">
-                    <a href="https://the-neighbourhood.fandom.com/wiki/Jeremy_Freedman" target="_blank">
-                        <div class="foto"><img src="imagens/artistas/jeremy-freedman.jpg" alt="" class="imgartist"></div>
-                        <p class="artistname">Jeremy Freedman</p>
-                    </a>
-                </div>
-                <div class="artistsection">
-                    <a href="https://the-neighbourhood.fandom.com/wiki/Zach_Abels" target="_blank">
-                        <div class="foto"><img src="imagens/artistas/zach-abels.jpg" alt="" class="imgartist"></div>
-                        <p class="artistname">Zach Ables</p>
-                    </a>
-                </div>
-                <div class="artistsection">
-                    <a href="https://the-neighbourhood.fandom.com/wiki/Mikey_Margott" target="_blank">
-                        <div class="foto"><img src="imagens/artistas/mikey-margott.jpg" alt="" class="imgartist"></div>
-                        <p class="artistname">Mikey Margott</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="content">
-            <h4>Músicas populares</h4>
-            <div class="popularmusic">
-                    <div class="capa"><img src="imagens/musicas/sweater-weather.jpg" alt="" class="imgcapa"></div>
-                    <div class="musiccontente">
-                        <div class="contenttext">
-                            <h5>Sweater Weather</h5>
-                            <p>A letra de "Sweater Weather" é frequentemente interpretada como uma canção sobre um relacionamento complicado. A referência ao "tempo de suéter" no título sugere uma mudança de estação, simbolizando uma mudança nos sentimentos e no relacionamento.</p>
-                        </div>
-                    </div>
-            </div>
+    
+    <section class="introducao">
+        <h1>Bem vindo!</h1>
+        <h2>Sobre a página</h2>
+        <article>
+            <h3>Melanie Martinez</h3>
+            <p>Esta página é dedicada à talentosa artista Melanie Martinez. Aqui, exploramos sua carreira musical, discografia, performances e tudo o que há para saber sobre essa incrível artista.</p><br>
 
-        </section>
-    </main>
+            <h3>Direitos Reservados</h3>
+            <p>É importante destacar que todos os direitos relativos a Melanie Martinez são estritamente reservados a ela. Nenhuma violação de direitos autorais é intencional. Caso haja alguma preocupação em relação ao conteúdo exibido nesta página, entre em contato conosco para que possamos abordar a situação prontamente. Esta fan page foi criada como uma expressão de admiração e respeito pelo trabalho artístico de Melanie Martinez. Qualquer conteúdo relacionado a Melanie é creditado a ela e aos seus respectivos detentores de direitos autorais.</p><br>
+
+            <h3>Propósito da Fan Page</h3>
+            <p>Gostaríamos de esclarecer que esta fan page foi desenvolvida exclusivamente para aprimorar as habilidades de programação web de seus criadores. Estamos comprometidos em criar uma experiência informativa e envolvente para os fãs, proporcionando um espaço virtual dedicado à celebração da arte de Melanie Martinez.</p><br>
+
+            <p>Agradecemos por visitar nossa fan page dedicada a Melanie Martinez. Esperamos que você desfrute da experiência!</p>
+        </article>
+    </section>
+
+    <!-- Biografia -->
+    <section class="biografia">
+        <article id="conteudo">
+            <h2>Melanie Martinez: Uma Jornada Artística</h2>
+            <p>Melanie Adele Martinez, nascida em 28 de abril de 1995, é uma cantora, compositora, atriz e diretora de vídeos musicais americana. Ela ganhou destaque em 2012 como participante da terceira temporada do programa de talentos "The Voice" nos Estados Unidos, onde sua presença cativante e voz única a destacaram desde o início.</p><br>
+            
+            <img src="imagens/melanie-bio.jpg" alt="Melanie Martinez ">
+
+            <h2>Início da Carreira</h2>
+            <p>Martinez, nascida e criada no estado de Nova York, desde cedo demonstrou uma paixão pela música e pela expressão artística. Sua jornada começou em palcos locais, onde sua voz poderosa e presença de palco magnética atraíam a atenção.</p>
+            
+            
+            <h3>O Sucesso em "The Voice"</h3>
+            <p>O destaque de Melanie veio quando ela participou do "The Voice" em 2012, capturando a imaginação do público e dos treinadores. Sua interpretação única de músicas populares, como "Toxic" de Britney Spears, deixou uma impressão duradoura.</p>
+            
+            <img src="imagens/melanie-thevoice.jpg
+            " alt="Melanie Martinez se apresenta no The Voice">
+
+            <h3>Carreira Musical</h3>
+            <p>Após sua participação no programa, Melanie Martinez mergulhou na carreira musical e lançou seu álbum de estreia, "Cry Baby", em 2015. O álbum recebeu elogios por sua originalidade e narrativa coesa, revelando o talento singular de Martinez tanto como cantora quanto como contadora de histórias.</p>
+            
+            <h2>Exploração de Temas Complexos</h2>
+            <p>O trabalho de Melanie é conhecido por explorar temas complexos, muitas vezes desafiando as normas e abordando questões sociais. Suas músicas são poderosas narrativas que tratam de temas como relacionamentos, autenticidade e as complexidades da experiência humana.</p>
+            
+            <h3>Além da Música</h3>
+            <p>
+            Além de sua carreira musical, Melanie Martinez também se aventurou na direção de vídeos musicais, como o filme K-12. Seus vídeos são visualmente impactantes, complementando suas músicas de maneiras inovadoras.
+            
+            Melanie Martinez continua a ser uma força criativa na indústria da música, inspirando fãs em todo o mundo com sua autenticidade, talento e abordagem artística única.
+            </p>
+            
+            <img src="imagens/mlenaie-movie.jpg" alt="Melanie Martinez na cena de K1-2">
+            <a href=".com">Leia mais sobre melanie...</a>
+        </article>
+        <button id="lermais">Ler mais</button>
+        <script src="lermais.js"></script>
+    </section>
+
+    <!-- Musicas populares -->
+    <!-- colocar efeito paralax -->
+    <section class="popularmusicas">
+        <h2>Músicas populares</h2>
+        <ul>
+            <li>
+                <div>
+                    <img src="imagens/crybaby.jpg" alt="" class="capas">
+                    <audio src=""></audio>
+                    <a href="">Play Date</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="imagens/crybaby.jpg" alt="">
+                    <audio src=""></audio>
+                    <a href="">Mad Hatter</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="imagens/soap.png" alt="">
+                    <audio src=""></audio>
+                    <a href="">Soap</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="imagens/dollhouse.jpg" alt="">
+                    <audio src=""></audio>
+                    <a href="">Dollhouse</a>
+                </div>
+            </li>
+        </ul>
+        <a href="">Ver discografia completa</a>
+    </section>
+
+    <!-- Albuns -->
+
+    <section class="albuns">
+        <h2>Albuns</h2>
+        <ul>
+            <li>
+                <div>
+                    <img src="imagens/crybaby.jpg" alt="Capa do álbum Cry Baby">
+                    <audio src="caminho_para_musica_cry_baby.mp3"></audio>
+                    <a href="detalhes_cry_baby.html">Cry Baby (2015)</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="caminho_para_imagem_dollhouse.jpg" alt="Capa do álbum Dollhouse">
+                    <audio src="caminho_para_musica_dollhouse.mp3"></audio>
+                    <a href="detalhes_dollhouse.html">Dollhouse (2014)</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="caminho_para_imagem_extra_clutter.jpg" alt="Capa do álbum Cry Baby's Extra Clutter EP">
+                    <audio src="caminho_para_musica_extra_clutter.mp3"></audio>
+                    <a href="detalhes_extra_clutter.html">Cry Baby's Extra Clutter EP (2016)</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="caminho_para_imagem_k-12.jpg" alt="Capa do álbum K-12">
+                    <audio src="caminho_para_musica_k-12.mp3"></audio>
+                    <a href="detalhes_k-12.html">K-12 (2019)</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="caminho_para_imagem_after_school.jpg" alt="Capa do álbum After School">
+                    <audio src="caminho_para_musica_after_school.mp3"></audio>
+                    <a href="detalhes_after_school.html">After School (2020)</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="caminho_para_imagem_portals.jpg" alt="Capa do álbum Portals">
+                    <audio src="caminho_para_musica_portals.mp3"></audio>
+                    <a href="detalhes_portals.html">Portals (2023)</a>
+                </div>
+            </li>
+        </ul>
+        <a href="todos_os_albuns.html">Mais álbuns</a>
+    </section>
+
+    <!-- rodape -->
+
+    <footer>
+        <div>Redes sociais</div>
+        <p>Todos os direitos reservados a sla oq</p>
+    </footer>
 </body>
 </html>
